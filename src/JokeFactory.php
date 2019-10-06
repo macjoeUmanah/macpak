@@ -3,15 +3,9 @@
 namespace MacjoeUmanah\MacPak;
 
 class JokeFactory
-
 {
-
-
-	public function test(){
-
-
-		echo "modified some thingssssssssssss";
-	}
-
-   
+    public function test()
+    {
+        echo 'modified some thingssssssssssss';
+    }
 }
