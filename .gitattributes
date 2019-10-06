@@ -1,0 +1,5 @@
+/.gitignore
+/.travis.yml
+/.styleci.yml
+/tests
+/.gitattributes
