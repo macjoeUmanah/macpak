@@ -10,7 +10,7 @@ class JokeFactory
 	public function test(){
 
 
-		echo "modified some things";
+		echo "modified some thingssssssssssss";
 	}
 
    
