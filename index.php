@@ -1,12 +1,9 @@
 <?php
 
-
 use MacjoeUmanah\MacPak\JokeFactory;
 
-include "vendor/autoload.php";
+include 'vendor/autoload.php';
 
-
-$mac= new JokeFactory();
-
+$mac = new JokeFactory();
 
 $mac->test();
