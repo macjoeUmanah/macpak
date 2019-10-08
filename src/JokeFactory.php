@@ -4,8 +4,18 @@ namespace MacjoeUmanah\MacPak;
 
 class JokeFactory
 {
-    public function test()
+
+	protected $jokes=[];
+
+	public function __construct(array $jokes=null){
+
+
+		$this->jokes=$jokes;
+
+
+	}
+    public function getRandomJoke()
     {
-        echo 'modified some thingssssssssssss';
+        return $this->jokes[array_rand($this->jokes)];
     }
 }
