@@ -7,7 +7,7 @@ Create random jokes in your next PHP project
 Require the package using composer
 
 ```bash
-composer require macjoeUmanah/macpak
+composer require macjoeumanah/macpak
 ```
 
 ## Usage
