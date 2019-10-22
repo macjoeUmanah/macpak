@@ -1,18 +1,21 @@
 <?php
 
 namespace MacjoeUmanah\MacPak;
+use GuzzleHttp\Client;
 
 class JokeFactory
 {
-    protected $jokes = [];
 
-    public function __construct(array $jokes = null)
+     const API_ENDPOINT = 'http://api.icndb.com/jokes/random';
+    protected $client;
+    public function __construct(Client $client = null)
     {
-        $this->jokes = $jokes;
+        $this->client = $client ?: new Client();
     }
-
     public function getRandomJoke()
     {
-        return $this->jokes[array_rand($this->jokes)];
+        $response = $this->client->get(self::API_ENDPOINT);
+        $joke = json_decode($response->getBody()->getContents());
+        return $joke->value->joke;
     }
 }
